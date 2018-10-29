@@ -1,0 +1,13 @@
+<div class='container'>
+  <h1 class="text-center">Page Creators</h1>
+  <ul class="list-inline text-center">
+    <% data.creators.each do |creator, creator_info| %>
+      <li>
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{creator_info.gh_username}", class: "img-circle avatar-height" %>
+        <h2><%= creator_info.name %></h2>
+        <h3><%= creator_info.gh_username %></h3>
+        <h3><%= creator_info.address %></h3>
+      </li>
+    <% end %>
+  </ul>
+</div>
